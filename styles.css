@@ -1,0 +1,114 @@
+/* Estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Doto', sans-serif; /* Aplicando la fuente de Google Fonts */
+    background-color: #fff8e1;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #fdd835;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+}
+
+main {
+    background-color: #ffecb3;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Estilos de la imagen principal */
+.imagen-principal {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Estilos de imagen básica */
+.img-responsive {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Transición para el zoom */
+}
+
+/* Efecto de zoom cuando el ratón pasa por encima */
+.zoom:hover {
+    transform: scale(1.1); /* Incrementa el tamaño de la imagen al 110% */
+}
+
+.instrucciones ol li {
+    font-size: 1rem;
+    color: #1505f1; /* Color para el texto de cada paso */
+    margin-bottom: 1.2rem;
+    padding-left: 1rem;
+    border-left: 4px solid #0af521; /* Línea decorativa en cada paso */
+}
+
+/* Colores específicos para cada paso */
+.instrucciones ol li:nth-child(1) {
+    color: #f50ecb; /* Color para el primer paso */
+}
+
+.instrucciones ol li:nth-child(2) {
+    color: #039be1; /* Color para el segundo paso */
+}
+
+.instrucciones ol li:nth-child(3) {
+    color: #170701; /* Color para el tercer paso */
+}
+
+.instrucciones ol li:nth-child(4) {
+    color: #fd0707; /* Color para el cuarto paso */
+}
+
+.instrucciones ol li:nth-child(5) {
+    color: #a1887f; /* Color para el quinto paso */
+}
+
+button {
+    background-color: #f6f4f3;
+    color: rgb(237, 7, 7);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0cf314;
+}
+
+#consejo {
+    margin-top: 1rem;
+    color: #ff5722;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #777;
+}
